@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"lib": ["es2021"],
+		"sourceMap": true,
+		"outDir": "dist",
+		"noEmit": true,
+		"removeComments": true,
+		"strict": true,
+		"emitDeclarationOnly": false,
+		"baseUrl": ".",
+		"moduleResolution": "Node",
+		"noImplicitAny": false,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"isolatedModules": true,
+		"skipLibCheck": true,
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": ["src/**/*", "tsup.config.ts", "test.ts", "mongoose-gen.ts"],
+	"exclude": ["dist", "node_modules"]
+}
